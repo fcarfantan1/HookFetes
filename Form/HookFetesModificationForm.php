@@ -14,15 +14,12 @@ use Thelia\log\Tlog;
  */
 class HookFetesModificationForm extends HookFetesCreationForm
 {
-  protected function buildForm()
+  protected function buildForm($change_mode = false)
     {
       var_dump($this->getRequest()->query->get("fete_id"));
         parent::buildForm(true);
         Tlog::getInstance()->addDebug("FCA : HookFetesModificationForm2");
 
-
-     /**   $this->formBuilder
-        ->add("id", "hidden", array("data" => $this->getRequest()->query->get("fete_id"))); **/
          $this->formBuilder
             ->add("id", "hidden", array(
                     "constraints" => array(new GreaterThan(array('value' => 0))),
