@@ -1,0 +1,24 @@
+{extends file="layout.tpl"}
+{block name='no-return-functions' append}
+{$breadcrumbs = [['title' => {intl l="Plant Fairs" d='hookfetes.fo.default'}, 'url'=>{url file="fetes-des-plantes"}]]}
+{/block}
+{block name="main-content"}
+<div>
+<h2>{intl l='Our plant fair dates' d='hookfetes.fo.default'}  </h2>  
+<ul>
+ {loop type="fete" name="fete.front" lang="{$LANG}" }       
+  <!-- <p class="thelia_agenda"> -->
+  <li>                                                    
+  <a href="{$LIEN}" target="_blank"><span>{$TITLE}</span>
+  <em> {$VILLE} ({$DEPARTEMENT})</em> 
+	<strong>{$DEBUTFIN}</strong> </p>
+</a>
+</li>
+
+{/loop}
+</ul>
+ {/block} 
+
+   
+
+

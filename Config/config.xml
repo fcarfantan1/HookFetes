@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config xmlns="http://thelia.net/schema/dic/config"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/config http://thelia.net/schema/dic/config/thelia-1.0.xsd">
+
+    <loops>
+         <loop name="fete" class="HookFetes\Loop\FeteLoop" />
+    </loops>
+    <services>
+        <service id="hookfetes.action.update.position" class="HookFetes\Actions\AgendaFetes">
+            <tag name="kernel.event_subscriber"/>
+        </service>
+    </services>
+
+   <forms>
+        <form name="fetes.add.form" class="HookFetes\Form\FetesAddForm" />
+        <form name="fetes.update.form" class="HookFetes\Form\FetesUpdateForm" />
+        <form name="fetes.modification.form" class="HookFetes\Form\HookFetesModificationForm" />
+        <form name="fetes.creation.form" class="HookFetes\Form\HookFetesCreationForm"/>
+    </forms>
+    <hooks>
+        <hook id="hookfetes.hook.front" class="HookFetes\Hook\FrontHook" scope="request">
+            <tag name="hook.event_listener" event="main.navbar-fetes" templates="render:main-navbar-fetes.html"/>
+        </hook>
+        <hook id="hookfetes.hook.back">
+            <tag name="hook.event_listener" event="module.configuration" type="back" templates="module_configuration.html"/>
+            <tag name="hook.event_listener" event="module.config-js" type="back" templates="js:assets/js/module-configuration.js" />
+        </hook>
+    </hooks>
+</config>
