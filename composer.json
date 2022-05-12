@@ -1,5 +1,5 @@
 {
-  "name": "your-vendor/hook-fetes-module",
+  "name": "fcarfantan/hook-fetes-module",
   "license": "LGPL-3.0+",
   "type": "thelia-module",
   "require": {
