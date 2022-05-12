@@ -18,9 +18,9 @@ use Thelia\Log\Tlog;
 use HookFetes\Model\AgendaFetesQuery;
 
 /**
- * Class Configuration
+ * Class FetesUpdateForm
  * @package HookFetes\Form
- * @author Julien Chanséaume <jchanseaume@openstudio.fr>
+ * @author François Carfantan <f.carfantan@orange.fr>
  */
 class FetesUpdateForm extends BaseForm {
 

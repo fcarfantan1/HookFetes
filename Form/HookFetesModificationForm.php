@@ -2,13 +2,12 @@
 
 
 namespace HookFetes\Form;
-use Symfony\Component\Validator\Constraints;
 use Symfony\Component\Validator\Constraints\GreaterThan;
 use Thelia\log\Tlog;
 
 /*
- *
- * @package HookFetes
+ * Class HookFetesModificationForm
+ * @package HookFetes\Form
  * @author  François Carfantan <f.carfantan@orange.fr>
  *
  */

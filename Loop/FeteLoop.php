@@ -11,6 +11,11 @@ use Thelia\Core\Template\Loop\Argument\ArgumentCollection;
 use Thelia\Core\Template\Loop\Argument\Argument;
 use Thelia\log\Tlog;
 
+/**
+ * Class FeteLoop
+ * @author François Carfantan <f.carfantan@orange.fr>
+ * @package HookFetes\Loop
+ */
 class FeteLoop extends BaseLoop implements PropelSearchLoopInterface {
 		 public function buildModelCriteria()
 		{

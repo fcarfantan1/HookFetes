@@ -4,10 +4,10 @@ namespace HookFetes\Form;
 
 use Thelia\Core\Translation\Translator;
 use Thelia\Form\BaseForm;
-use HookFetes\Model\AgendaFetesQuery;
+
 
 /**
- * Class Configuration
+ * Class HookFetesCreationForm
  * @package HookFetes\Form
  * @author François Carfantan <f.carfantan@orange.fr>
  */

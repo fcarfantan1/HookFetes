@@ -12,7 +12,11 @@
 
 namespace HookFetes\Events;
 
-
+/**
+ * Class HookFetesDeleteEvent
+ * @package HookFetes\Events
+ * @author François Carfantan <f.carfantan@orange.fr>
+ */
 class HookFetesDeleteEvent extends HookFetesEvent
 {
     /** @var int */

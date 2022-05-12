@@ -14,7 +14,11 @@ namespace HookFetes\Events;
 
 use Thelia\Core\Event\ActionEvent;
 use HookFetes\Model\AgendaFetes;
-
+/**
+ * class HookFetesEvent
+ * @author François Carfantan <f.carfantan@orange.fr>
+ * @package HookFetes\Events
+ */
 class HookFetesEvent extends ActionEvent
 {
     protected $fete = null;

@@ -1,16 +1,18 @@
 <?php
 namespace HookFetes\Controller\Back;
-use Thelia\Controller\Admin\AbstractCrudController;
-use Thelia\Core\Security\AccessManager;
-use Thelia\Core\Security\Resource\AdminResources;
+
 use Symfony\Component\HttpFoundation\RedirectResponse;
+
 use Thelia\Log\Tlog;
-use HookFetes\Model\AgendaFetes;
-use HookFetes\Model\AgendaFetesQuery;
+
 use Thelia\Tools\URL;
-use Thelia\Controller\Admin\BaseAdminController;
-use Thelia\Form\Definition\AdminForm;
+
 use Thelia\Core\Event\UpdatePositionEvent;
+
+use HookFetes\Model\AgendaFetesQuery;
+
+use Thelia\Controller\Admin\AbstractCrudController;
+
 use HookFetes\Events\HookFetesEvents;
 use HookFetes\Events\HookFetesCreateEvent;
 use HookFetes\Events\HookFetesUpdateEvent;

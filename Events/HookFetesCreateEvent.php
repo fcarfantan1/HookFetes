@@ -11,11 +11,14 @@
 /*************************************************************************************/
 
 namespace HookFetes\Events;
-use HookFetes\Model\Map\AgendaFetesTableMap;
-use Thelia\Log\Tlog;
+
 use Propel\Runtime\Util\PropelDateTime;
 
-
+/**
+ * Class HookFetesCreateEvent
+ * @author François Carfantan <f.carfantan@orange.fr>
+ * @package HookFetes\Events
+ */
 class HookFetesCreateEvent extends HookFetesEvent
 {
     protected $title;

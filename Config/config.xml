@@ -8,7 +8,7 @@
          <loop name="fete" class="HookFetes\Loop\FeteLoop" />
     </loops>
     <services>
-        <service id="hookfetes.action.update.position" class="HookFetes\Actions\AgendaFetes">
+        <service id="hookfetes.action.back" class="HookFetes\Actions\AgendaFetes">
             <tag name="kernel.event_subscriber"/>
         </service>
     </services>

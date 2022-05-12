@@ -6,9 +6,9 @@ use Thelia\Core\Hook\BaseHook;
 
 
 /**
- * Class Front
- * @package Test\Hook
- * @author Julien Chanséaume <jchanseaume@openstudio.fr>
+ * Class FrontHook
+ * @package HookFetes\Hook
+ * @author François Carfantan <f.carfantan@orange.fr>
  */
 class FrontHook extends BaseHook {
 

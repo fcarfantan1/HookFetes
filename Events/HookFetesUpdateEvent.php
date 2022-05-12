@@ -3,6 +3,12 @@
 namespace HookFetes\Events;
 use Propel\Runtime\Util\PropelDateTime;
 use Thelia\Log\Tlog;
+
+/**
+ * Class HookFetesUpdateEvent
+ * @package HookFetes\Events
+ * @author François Carfantan <f.carfantan@orange.fr>
+ */
 class HookFetesUpdateEvent extends HookFetesEvent
 {
 protected $title;
