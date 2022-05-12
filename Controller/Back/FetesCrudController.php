@@ -22,7 +22,7 @@ use HookFetes\Events\HookFetesDeleteEvent;
  * @package HookFetes\Controller
  * @author Francois Carfantan <f.carfantan@orange.fr>
  */
-class PositionController extends AbstractCrudController
+class FetesCrudController extends AbstractCrudController
 {
 
     protected $changePositionEventIdentifier;

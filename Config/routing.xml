@@ -5,28 +5,28 @@
         xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
 
     <route id="hookfetes.back.configuration.add" path="/admin/hookfetes/add" methods="post,get">
-            <default key="_controller">HookFetes\Controller\Back\PositionController::createAction</default>
+            <default key="_controller">HookFetes\Controller\Back\FetesCrudController::createAction</default>
     </route>
      <route id="hookfetes.back.configuration.update" path="/admin/hookfetes/update" methods="post,get">
-        <default key="_controller">HookFetes\Controller\Back\PositionController::updateAction</default>
+        <default key="_controller">HookFetes\Controller\Back\FetesCrudController::updateAction</default>
     </route>
      <route id="hookfetes.back.configuration.delete" path="/admin/hookfetes/delete" methods="post,get">
-        <default key="_controller">HookFetes\Controller\Back\PositionController::deleteAction</default>
+        <default key="_controller">HookFetes\Controller\Back\FetesCrudController::deleteAction</default>
     </route>
     <route id="admin.hookfetes.default" path="/admin/modules/HookFetes" methods="post,get">
-        <default key="_controller">HookFetes\Controller\Back\PositionController::defaultAction</default>
+        <default key="_controller">HookFetes\Controller\Back\FetesCrudController::defaultAction</default>
     </route>
     <route id="hookfetes.back.configuration.save" path="/admin/hookfetes/create" methods="post,get">
-        <default key="_controller">HookFetes\Controller\Back\PositionController::createAction</default>
+        <default key="_controller">HookFetes\Controller\Back\FetesCrudController::createAction</default>
     </route>
     <route id="hookfetes.back.configuration.save.update" path="/admin/hookfetes/save" methods="post,get">
-        <default key="_controller">HookFetes\Controller\Back\PositionController::processUpdateAction</default>
+        <default key="_controller">HookFetes\Controller\Back\FetesCrudController::processUpdateAction</default>
     </route>
     <route id="hookfetes.front.fetes-des-plantes" path="/hook-fetes-des-plantes" methods="post, get">
         <default key="_controller">HookFetes\Controller\Front\FetesDesPlantesController::getFetesList</default>
     </route>
      <route id="hookfetes.back.update.position" path="/admin/hookfetes/update-position" methods="post, get">
-        <default key="_controller">HookFetes\Controller\Back\PositionController::updatePositionAction</default>
+        <default key="_controller">HookFetes\Controller\Back\FetesCrudController::updatePositionAction</default>
     </route>
     
 </routes>
